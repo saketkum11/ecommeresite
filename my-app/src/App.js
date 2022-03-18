@@ -4,38 +4,48 @@ import logo from "./logo.png";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} alt="mockBee logo" width="180" height="180" />
-        <h1 className="brand-title">
-          Welcome to <span>mockBee!</span>
-        </h1>
-        <p className="brand-description">
-          Get started by editing <code>src/App.js</code>
-        </p>
-        <div className="links">
-          <a
-            href="https://mockbee.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Explore mockBee
-          </a>
-          <a
-            href="https://mockbee.netlify.app/docs/api/introduction"
-            target="_blank"
-            rel="noreferrer"
-          >
-            API Documentation
-          </a>
-          <a
-            href="https://github.com/neogcamp/mockBee"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Contribute
-          </a>
-        </div>
-      </header>
+       <nav class=" bg-green-7 text-color-0 pd-5 position-fixed t-0">
+            <div class="wt-80  m-auto  flex items-center">
+                <div class="text-xm">
+                    <a href="/index.html" class="text-dec text-color-0 text-m">Farmgistic</a>
+                </div>
+                <div class="flex items-center justify-even m-lf">
+                    <input type="search" placeholder="search"
+                        class="pd-y-3 pd-x-5 rounded-L border-none text-center outline-none"/>
+                    <i class="fa-solid fa-magnifying-glass bg-black-0 text-color-9 rounded-L pd-3 text-xm"></i>
+                </div>
+                <div class="m-lf">
+
+
+                    <ul class="style-none flex items-center">
+                        <li class="pd-x-4 flex  items-center position-rel justify-center">
+                            <a href="/component/wishlist/wishlist.html" target="_blank" class="text-dec text-color-0 ">
+                                <i class="fa-solid  fa-heart text-color-0"></i>
+                            </a>
+
+                            <span
+                                class=" text-s position-ab p-t-n-2 flex items-center justify-center bg-red-7 wt-fixed-5 h-fixed-5 rounded-full p-r-0">0</span>
+                        </li>
+
+                        <li class=" pd-x-4 flex  items-center position-rel justify-center">
+                            <a href="/component/cart/cart.html" target="_blank" class="text-dec text-color-0 ">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                            <span
+                                class=" text-s position-ab p-t-n-2 flex items-center justify-center bg-red-7 wt-fixed-5 h-fixed-5 rounded-full p-r-0">0</span>
+
+
+                        </li>
+                        <li class="pd-x-4">
+                            <small>cart</small>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
     </div>
   );
 }
