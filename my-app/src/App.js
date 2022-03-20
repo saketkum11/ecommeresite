@@ -4,6 +4,8 @@ import logo from "./logo.png";
 function App() {
   return (
     <div className="App">
+        <button></button>
+        <h1></h1>
        <nav class=" bg-green-7 text-color-0 pd-5 position-fixed t-0">
             <div class="wt-80  m-auto  flex items-center">
                 <div class="text-xm">
